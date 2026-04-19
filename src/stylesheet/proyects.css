@@ -1,0 +1,85 @@
+.experiencia-profesional {
+  padding: 80px 20px;
+  background: #f5f6f7;
+}
+
+/* PERFIL */
+.perfil {
+  max-width: 800px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+}
+
+.perfil p {
+  color: #555;
+  margin-top: 10px;
+}
+
+.contacto {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* TITULOS */
+.titulo-seccion {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+  position: relative;
+}
+
+.titulo-seccion::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #ffc107;
+  display: block;
+  margin: 10px auto 0;
+}
+
+/* CARDS */
+.experiencia-card {
+  max-width: 320px;
+  margin: 15px;
+  padding: 20px;
+  background: #fff;
+  border-left: 4px solid #ffc107;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.experiencia-card:hover {
+  transform: translateY(-6px);
+}
+
+.experiencia-titulo {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.experiencia-fecha {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.experiencia-texto {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* BADGES */
+.badges-contenedor {
+  margin-top: 10px;
+}
+
+.badge {
+  margin: 3px;
+  font-size: 0.75rem;
+}

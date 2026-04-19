@@ -1,0 +1,46 @@
+.sobre-mi {
+  padding: 80px 20px;
+  background: #0f172a; /* oscuro elegante */
+  color: #fff;
+}
+
+.sobre-mi .contenedor {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.seccion-titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.seccion-texto {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #cbd5e1;
+  margin-bottom: 15px;
+}
+
+/* 🔥 SKILLS */
+.skills {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.skills span {
+  background: #1e293b;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.skills span:hover {
+  background: #facc15;
+  color: #000;
+}
