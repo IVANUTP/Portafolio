@@ -1,6 +1,5 @@
 {
   "name": "portafolio",
-  "homepage": "https://www.angelpy.com.ar/portafolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
