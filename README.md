@@ -31,4 +31,10 @@ Incluye:
 ---
 
 ## 📂 Estructura del proyecto
+src/
+├── components/
+├── img/
+├── stylesheet/
+├── App.js
+└── index.js
 
