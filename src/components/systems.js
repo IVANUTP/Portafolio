@@ -6,7 +6,7 @@ class Systems extends React.Component {
         return (
             <div className="col-12 col-md-6 col-lg-4">
                 <div className="proyecto">
-                    <img src={this.props.img}  />
+                    <img src={this.props.img} alt="proyecto" />
                     <div className="overlay">
                         <p>{this.props.titulo}</p>
                         <span>{this.props.descripcion}</span>
