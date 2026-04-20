@@ -19,13 +19,13 @@ const Navbar=()=>{
                 <a className="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/proyectos">Proyectos</a>
+                <a className="nav-link" href="#proyectos">Proyectos</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/testimonios">Testimonios</a>
+                <a className="nav-link" href="#testimonios">Testimonios</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/contacto">Contacto</a>
+                <a className="nav-link" href="#contacto">Contacto</a>
               </li>
             </ul>
           </div>
