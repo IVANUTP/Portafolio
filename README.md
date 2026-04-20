@@ -3,8 +3,7 @@
 Este proyecto es mi portafolio personal como desarrollador web, donde presento mis habilidades, proyectos y experiencia en desarrollo de aplicaciones web modernas.
 
 ## 🚀 Demo
-👉 (Agrega aquí tu link cuando lo subas)
-https://tu-portafolio.com
+https://portafolio-cgd2.vercel.app/
 
 ---
 
