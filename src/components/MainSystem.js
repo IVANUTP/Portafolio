@@ -3,7 +3,7 @@ import Systems from "./systems";
 import '../stylesheet/system.css'
 import imgInventario from '../img/gestionInventario.png';
 import bbrbar from '../img/brber.png';
-import proyecto3 from '../img/proyecto-3.png';
+import weatherapp from '../img/weatherapp.png';
 
 const MainSystem = () => {
 
@@ -26,8 +26,9 @@ const MainSystem = () => {
 
                         />
                         <Systems
-                            img={proyecto3}
-                            titulo="Proyecto3"
+                            img={weatherapp}
+                            titulo="WeatherApp"
+                            descripcion="Aplicación web de pronóstico del tiempo que muestra condiciones climáticas en tiempo real para múltiples ubicaciones, utilizando una API de servicios meteorológicos."
                         />
 
                     </div>

@@ -14,7 +14,7 @@ class Systems extends React.Component {
                             <a href="https://github.com/IVANUTP" target="_blank" rel="noopener noreferrer">
                                 <i className="bi bi-github"></i>
                             </a>
-                            <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://weather-app-psi-one-99.vercel.app/" target="_blank" rel="noopener noreferrer">
                                 <i className="bi bi-laptop"></i>
                             </a>
                         </div>
