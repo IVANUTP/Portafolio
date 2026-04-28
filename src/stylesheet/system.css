@@ -2,13 +2,13 @@
   padding: 40px;
 }
 
-.proyectos-recientes img {
-  height: 100%;
+.proyectos-recientes  img {
   width: 100%;
-  padding: 10px;
+  height: 300px; /* 🔥 altura fija */
+  object-fit: cover; /* 🔥 clave */
   border-radius: 10px;
   display: block;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .proyectos-contenedor {
