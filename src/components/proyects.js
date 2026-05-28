@@ -1,20 +1,36 @@
 import React from "react";
+import { BriefcaseFill } from "react-bootstrap-icons";
 
 class Proyect extends React.Component {
   render() {
     return (
-      <div className="columna col-12 col-md-4 experiencia-card">
-        <i className="bi bi-briefcase"></i>
+      <div className="col-12 col-lg-4 d-flex justify-content-center">
+        <div className="project-card">
 
-        <p className="experiencia-titulo">{this.props.titulo}</p>
-        <span className="experiencia-fecha">{this.props.fecha}</span>
+          <div className="project-top">
+            <div className="icon-box">
+              <BriefcaseFill />
+            </div>
 
-        <p className="experiencia-texto">{this.props.texto}</p>
+            <span className="project-date">
+              {this.props.fecha}
+            </span>
+          </div>
 
-        <div className="badges-contenedor">
-          <span className="badge text-bg-dark">{this.props.sec1}</span>
-          <span className="badge text-bg-dark">{this.props.sec2}</span>
-          <span className="badge text-bg-dark">{this.props.sec3}</span>
+          <h3 className="project-title">
+            {this.props.titulo}
+          </h3>
+
+          <p className="project-text">
+            {this.props.texto}
+          </p>
+
+          <div className="tech-container">
+            <span>{this.props.sec1}</span>
+            <span>{this.props.sec2}</span>
+            <span>{this.props.sec3}</span>
+          </div>
+
         </div>
       </div>
     );
@@ -22,5 +38,3 @@ class Proyect extends React.Component {
 }
 
 export default Proyect;
-
-

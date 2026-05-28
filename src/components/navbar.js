@@ -1,35 +1,69 @@
 import React from "react";
-import icono from '../img/icono.png'
-import '../stylesheet/navbar.css'
+import icono from "../img/icono.png";
+import "../stylesheet/navbar.css";
 
+const Navbar = () => {
+  return (
+    <nav className="custom-navbar navbar navbar-expand-lg fixed-top">
 
-const Navbar=()=>{
-    return(
-         <nav className="navbar navbar-expand-md navbar-light">
-        <div className="container-fluid">
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbar-toggler">
-            <a className="navbar-brand" href="/">
-              <img src={icono} width="50" alt="Logo de la página web"/>
-            </a>
-            <ul className="navbar-nav d-flex justify-content-center align-items-center">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#proyectos">Proyectos</a>
-              </li>
-          
-              <li className="nav-item">
-                <a className="nav-link" href="#contacto">Contacto</a>
-              </li>
-            </ul>
-          </div>
+      <div className="container">
+
+        {/* LOGO */}
+        <a className="navbar-brand" href="/">
+          <img
+            src={icono}
+            alt="Logo"
+            className="navbar-logo"
+          />
+        </a>
+
+        {/* BUTTON MOBILE */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i className="bi bi-list"></i>
+        </button>
+
+        {/* LINKS */}
+        <div
+          className="collapse navbar-collapse"
+          id="navbarContent"
+        >
+
+          <ul className="navbar-nav ms-auto">
+
+            <li className="nav-item">
+              <a className="nav-link" href="#sobre-mi">
+                Sobre mí
+              </a>
+            </li>
+
+            <li className="nav-item">
+              <a className="nav-link" href="#proyectos">
+                Proyectos
+              </a>
+            </li>
+
+            <li className="nav-item">
+              <a className="nav-link" href="#contacto">
+                Contacto
+              </a>
+            </li>
+
+          </ul>
+
         </div>
-      </nav>
-    )
-}
+
+      </div>
+
+    </nav>
+  );
+};
 
 export default Navbar;

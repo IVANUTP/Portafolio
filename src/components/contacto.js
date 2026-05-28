@@ -1,50 +1,86 @@
 import React, { useState } from "react";
-import '../stylesheet/contacto.css'
+import "../stylesheet/contacto.css";
 
 const Contacto = () => {
-    const [showcv, setshowcv] = useState(false)
 
-    return (
-        <>
-            <section id="contacto" className="contacto seccion-oscura">
-                <div className="container">
-                    <div className="container text-center rectangulo d-flex justify-content-evenly">
-                        <div className="row">
-                            <div className="col-12 col-md-4 seccion-titulo">
-                                ¡Hablemos!
-                            </div>
-                            <div className="col-12 col-md-4 descripcion">
-                                Contáctame para iniciar tu proyecto de desarrollo web o para cualquier consulta relacionada con mis servicios.
-                            </div>
-                            <div className="col-12 col-md-4">
-                                <button type="button" onClick={() => setshowcv(true)}>
-                                    Ver CV
-                                    <i className="bi bi-file-earmark-pdf-fill"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            {
-                showcv && (
-                    <div className="modal-cv">
-                        <div className="modal-content">
-                            <button className="close-btn" onClick={() => setshowcv(false)}>X</button>
+  const [showcv, setshowcv] = useState(false);
 
-                            <iframe
-                                src={process.env.PUBLIC_URL + "/cvAngel.pdf"}
-                                width="100%"
-                                height="600px"
-                                title="CV"
-                            />
-                        </div>
-                    </div>
-                )
-            }
-        </>
+  return (
+    <>
 
+      <section id="contacto" className="contact-section">
 
-    )
-}
+        <div className="contact-card">
+
+          <span className="contact-subtitle">
+            CONTACTO
+          </span>
+
+          <h2>
+            ¿Trabajamos juntos?
+          </h2>
+
+          <p>
+            Puedes contactarme para proyectos web,
+            colaboración o cualquier consulta relacionada
+            con desarrollo frontend o backend.
+          </p>
+
+          <div className="contact-buttons">
+
+            <button
+              className="primary-btn"
+              onClick={() => setshowcv(true)}
+            >
+              Ver CV
+              <i className="bi bi-file-earmark-pdf-fill"></i>
+            </button>
+
+            <a
+              href="mailto:tuemail@gmail.com"
+              className="secondary-btn"
+            >
+              Contactar
+            </a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* MODAL */}
+
+      {
+        showcv && (
+
+          <div className="modal-cv">
+
+            <div className="modal-content-custom">
+
+              <button
+                className="close-btn"
+                onClick={() => setshowcv(false)}
+              >
+                <i className="bi bi-x-lg"></i>
+              </button>
+
+              <iframe
+                src={process.env.PUBLIC_URL + "/cvAngel.pdf"}
+                width="100%"
+                height="600px"
+                title="CV"
+              />
+
+            </div>
+
+          </div>
+
+        )
+      }
+
+    </>
+  );
+};
+
 export default Contacto;

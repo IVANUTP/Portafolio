@@ -1,57 +1,80 @@
 import React from "react";
-import '../stylesheet/articulos.css'
+import "../stylesheet/articulos.css";
 
 const aprendizajes = [
   {
     titulo: "API REST con Laravel",
-    descripcion: "Creación de endpoints, rutas y controladores para manejo de datos.",
+    descripcion:
+      "Creación de endpoints, rutas y controladores para manejo de datos.",
   },
   {
     titulo: "Estados en React",
-    descripcion: "Uso de useState y useEffect para manejo dinámico de datos.",
-  },
-  {
-    titulo: "Base de datos con MySQL",
-    descripcion: "Diseño y conexión de base de datos con Laravel.",
+    descripcion:
+      "Uso de useState y useEffect para manejo dinámico de datos.",
   },
   {
     titulo: "CRUD completo",
-    descripcion: "Operaciones completas de creación, lectura, actualización y eliminación.",
+    descripcion:
+      "Operaciones de creación, lectura, actualización y eliminación.",
   },
   {
     titulo: "Consumo de APIs",
-    descripcion: "Integración de servicios externos usando Axios en React.",
-  }
+    descripcion:
+      "Integración de servicios externos usando Axios en React.",
+  },
+  {
+    titulo: "Diseño responsive",
+    descripcion:
+      "Interfaces modernas adaptadas a dispositivos móviles.",
+  },
 ];
 
 const Articulos = () => {
   return (
-    <section className="articulos d-flex flex-column align-items-center">
-      <h2 className="seccion-titulo texto-negro">Aprendizajes</h2>
-      <p className="seccion-descripcion">
-        Tecnologías y prácticas que he aplicado en mis proyectos
-      </p>
+    <section className="learning-section">
 
-      <div className="card shadow-sm">
-        <div className="card-header text-center">
-          Conocimientos recientes
-        </div>
+      <div className="learning-header">
 
-        <ul className="list-group list-group-flush">
-          {aprendizajes.map((item, index) => (
-            <li key={index} className="list-group-item aprendizaje-item">
-              <strong>{item.titulo}</strong>
-              <span>{item.descripcion}</span>
-            </li>
-          ))}
-        </ul>
+        <span className="learning-subtitle">
+          APRENDIZAJES
+        </span>
+
+        <h2>
+          Tecnologías y prácticas
+        </h2>
+
+        <p>
+          Herramientas y conocimientos que he aplicado
+          en diferentes proyectos web.
+        </p>
+
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-    </section>
 
+      <div className="learning-grid">
+
+        {aprendizajes.map((item, index) => (
+
+          <div className="learning-card" key={index}>
+
+            <div className="learning-number">
+              0{index + 1}
+            </div>
+
+            <h3>
+              {item.titulo}
+            </h3>
+
+            <p>
+              {item.descripcion}
+            </p>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    </section>
   );
 };
 

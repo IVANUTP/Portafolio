@@ -1,8 +1,104 @@
-.navbar{
-    padding: 2rem;
-    background-color: #f5f6f7;
+.custom-navbar {
+
+  background: rgba(2, 6, 23, 0.75);
+
+  backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+
+  padding: 18px 0;
+
+  transition: 0.3s ease;
 }
-.navbar-collapse{
-    align-items: center;
-    justify-content: space-between;
+
+/* LOGO */
+
+.navbar-logo {
+
+  width: 48px;
+
+  height: 48px;
+
+  object-fit: contain;
+}
+
+/* LINKS */
+
+.navbar-nav {
+
+  gap: 10px;
+}
+
+.nav-link {
+
+  color: #cbd5e1 !important;
+
+  font-size: 0.95rem;
+
+  font-weight: 500;
+
+  padding: 10px 18px !important;
+
+  border-radius: 10px;
+
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+
+  color: #38bdf8 !important;
+
+  background: rgba(255,255,255,0.04);
+}
+
+/* ACTIVE */
+
+.nav-link.active {
+
+  color: #38bdf8 !important;
+}
+
+/* TOGGLER */
+
+.navbar-toggler {
+
+  border: none;
+
+  color: white;
+
+  font-size: 1.6rem;
+
+  box-shadow: none !important;
+}
+
+.navbar-toggler i {
+
+  color: white;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 991px) {
+
+  .navbar-collapse {
+
+    margin-top: 20px;
+
+    background: rgba(15,23,42,0.95);
+
+    padding: 20px;
+
+    border-radius: 18px;
+  }
+
+  .navbar-nav {
+
+    gap: 5px;
+  }
+
+  .nav-link {
+
+    text-align: center;
+  }
+
 }
