@@ -1,37 +1,91 @@
 import React from "react";
-import '../stylesheet/sobremi.css'
-
+import "../stylesheet/sobremi.css";
 
 const SobreMi = () => {
   return (
-    <section id="sobre-mi" className="sobre-mi">
-      <div className="contenedor">
+    <section id="sobre-mi" className="about-section">
 
-        <h2 className="seccion-titulo">Sobre mí</h2>
+      <div className="about-container">
 
-        <p className="seccion-texto">
-          Soy desarrollador web con enfoque en backend, especializado en Laravel y PHP.
-          He desarrollado sistemas como gestión de citas para barbería e inventarios,
-          integrando APIs REST y bases de datos MySQL.
-        </p>
+        {/* LEFT */}
+        <div className="about-content">
 
-        <p className="seccion-texto">
-          Me enfoco en crear aplicaciones prácticas, funcionales y orientadas a resolver
-          problemas reales de negocio, mientras continúo aprendiendo nuevas tecnologías
-          para mejorar mis soluciones.
-        </p>
+          <span className="about-subtitle">
+            SOBRE MÍ
+          </span>
 
-        {/* 🔥 Skills */}
-        <div className="skills">
-          <span>Laravel</span>
-          <span>PHP</span>
-          <span>React</span>
-          <span>MySQL</span>
-          <span>APIs REST</span>
+          <h2 className="about-title">
+              Desarrollador Web
+            <span> Backend & Frontend</span>
+          </h2>
+
+          <p className="about-text">
+            Soy desarrollador web enfocado en backend con Laravel y PHP,
+            aunque también me gusta trabajar con React para crear interfaces modernas.
+          </p>
+
+          <p className="about-text">
+            Disfruto desarrollar aplicaciones funcionales,
+            aprender nuevas tecnologías y seguir mejorando
+            en el desarrollo de software.
+          </p>
+
+          <div className="about-buttons">
+            <a href="#proyectos" className="btn-primary-custom">
+              Ver proyectos
+            </a>
+
+            <a href="#contacto" className="btn-secondary-custom">
+              Contacto
+            </a>
+          </div>
+
+        </div>
+
+        {/* RIGHT */}
+        <div className="about-cards">
+
+          <div className="glass-card">
+            <h3>+3</h3>
+            <p>Proyectos desarrollados</p>
+          </div>
+
+          <div className="glass-card">
+            <h3>Laravel</h3>
+            <p>Backend Framework</p>
+          </div>
+
+          <div className="glass-card">
+            <h3>React</h3>
+            <p>Frontend moderno</p>
+          </div>
+
+          <div className="glass-card">
+            <h3>MySQL</h3>
+            <p>Bases de datos</p>
+          </div>
+
         </div>
 
       </div>
+
+      {/* SKILLS */}
+
+      <div className="skills-wrapper">
+
+        <span>Laravel</span>
+        <span>PHP</span>
+        <span>React</span>
+        <span>JavaScript</span>
+        <span>MySQL</span>
+        <span>REST API</span>
+        <span>Bootstrap</span>
+        <span>Tailwind</span>
+
+      </div>
+
     </section>
-  )
-}
+  );
+};
+
 export default SobreMi;

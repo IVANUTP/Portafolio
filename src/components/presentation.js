@@ -1,43 +1,50 @@
-import React from "react";
-import '../stylesheet/presentation.css';
-import hero from '../img/hero-inferior.png';
-import desarrollador from '../img/photo.jpg';
+  import React from "react";
+  import "../stylesheet/presentation.css";
+  import desarrollador from "../img/photo.jpg";
 
-const Presentation = () => {
+  const Presentation = () => {
     return (
-    <section className="hero">
+      <section className="hero">
 
-  <div className="hero-principal">
+        <div className="hero-content">
 
-    <img 
-      className="hero-imagen-desarrollador rounded-circle shadow-sm" 
-      src={desarrollador} 
-      alt="Foto de Ángel Iván García" 
-    />
+          <img
+            className="hero-image"
+            src={desarrollador}
+            alt="Ángel Iván García"
+          />
 
-    <h1 className="fw-bold">Hola, soy Ángel Iván García</h1>
+          <span className="hero-tag">
+            Laravel · React · APIs REST
+          </span>
 
-    <h2 className="hero-subtitle">
-      Desarrollador Web Jr | Laravel, React y APIs REST
-    </h2>
+          <h1>
+            Hola, soy
+            <span> Ángel Iván García</span>
+          </h1>
 
-    <p className="hero-text">
-      Construyo aplicaciones web modernas enfocadas en rendimiento,
-      escalabilidad y experiencia de usuario.
-    </p>
+          <p className="hero-description">
+            Desarrollador web enfocado en Laravel y React.
+            Me gusta crear aplicaciones modernas,
+            funcionales y con diseños limpios.
+          </p>
 
+          <div className="hero-buttons">
 
+            <a href="#proyectos" className="btn-primary-custom">
+              Ver proyectos
+            </a>
 
-  </div>
+            <a href="#sobre-mi" className="btn-secondary-custom">
+              Sobre mí
+            </a>
 
-  <img 
-    className="hero-inferior-imagen img-fluid" 
-    src={hero} 
-    alt="Ilustración desarrollo web" 
-  />
+          </div>
 
-</section>
+        </div>
+
+      </section>
     );
-};
+  };
 
-export default Presentation;
+  export default Presentation;
