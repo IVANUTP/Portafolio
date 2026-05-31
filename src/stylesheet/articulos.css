@@ -129,13 +129,93 @@
   font-size: 0.95rem;
 }
 
-/* RESPONSIVE */
+/* TABLETS */
+
+@media screen and (max-width: 992px) {
+
+  .learning-section {
+    padding: 90px 20px;
+  }
+
+  .learning-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/* CELULARES */
 
 @media screen and (max-width: 768px) {
 
-  .learning-header h2 {
+  .learning-section {
+    padding: 70px 15px;
+  }
 
-    font-size: 2.4rem;
+  .learning-header {
+    margin-bottom: 50px;
+  }
+
+  .learning-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .learning-header p {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  .learning-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .learning-card {
+    padding: 25px;
+  }
+
+  .learning-card h3 {
+    font-size: 1.15rem;
+  }
+
+  .learning-card p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+}
+
+/* CELULARES PEQUEÑOS */
+
+@media screen and (max-width: 480px) {
+
+  .learning-section {
+    padding: 60px 12px;
+  }
+
+  .learning-header h2 {
+    font-size: 1.9rem;
+  }
+
+  .learning-subtitle {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+  }
+
+  .learning-card {
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  .learning-number {
+    font-size: 0.8rem;
+  }
+
+  .learning-card h3 {
+    font-size: 1.05rem;
+  }
+
+  .learning-card p {
+    font-size: 0.85rem;
   }
 
 }
