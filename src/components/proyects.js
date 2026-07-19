@@ -3,17 +3,19 @@ import { BriefcaseFill } from "react-bootstrap-icons";
 
 class Proyect extends React.Component {
   render() {
+    const Icono = this.props.icono || BriefcaseFill;
+
     return (
       <div className="col-12 col-lg-4 d-flex justify-content-center">
         <div className="project-card">
 
           <div className="project-top">
             <div className="icon-box">
-              <BriefcaseFill />
+              <Icono />
             </div>
 
             <span className="project-date">
-              {this.props.fecha}
+              <span className="project-date-prompt">&gt;</span> {this.props.fecha}
             </span>
           </div>
 

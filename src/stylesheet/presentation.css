@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 /* GLOBAL */
 
 body {
   margin: 0;
   padding: 0;
-  background: #020617;
+  background: #0a0e12;
   font-family: 'Inter', sans-serif;
 }
 
@@ -17,12 +18,12 @@ body {
 
   background:
     radial-gradient(circle at top left,
-      rgba(56,189,248,0.10),
+      rgba(94,234,212,0.10),
       transparent 30%),
     linear-gradient(
       180deg,
-      #020617 0%,
-      #0f172a 100%
+      #0a0e12 0%,
+      #10161d 100%
     );
 
   display: flex;
@@ -87,17 +88,25 @@ body {
 
   background: rgba(255,255,255,0.04);
 
-  border: 1px solid rgba(56,189,248,0.15);
+  border: 1px solid rgba(94,234,212,0.18);
 
-  color: #93c5fd;
+  color: #7dd8c9;
 
-  font-size: 0.95rem;
+  font-family: 'JetBrains Mono', monospace;
+
+  font-size: 0.85rem;
 
   font-weight: 500;
 
   backdrop-filter: blur(10px);
 
   margin-bottom: 30px;
+}
+
+.hero-tag::before {
+  content: "// ";
+  color: #5eead4;
+  opacity: 0.6;
 }
 
 /* TITULO */
@@ -121,8 +130,8 @@ body {
 
   background: linear-gradient(
     90deg,
-    #38bdf8,
-    #60a5fa
+    #5eead4,
+    #38bdf8
   );
 
   -webkit-background-clip: text;
@@ -170,20 +179,24 @@ body {
 
   background: linear-gradient(
     135deg,
-    #38bdf8,
-    #0ea5e9
+    #5eead4,
+    #2dd4bf
   );
 
-  color: white;
+  color: #06211d;
 
   text-decoration: none;
 
-  font-weight: 600;
+  font-weight: 700;
+
+  font-family: 'JetBrains Mono', monospace;
+
+  font-size: 0.9rem;
 
   transition: 0.3s ease;
 
   box-shadow:
-    0 10px 25px rgba(56,189,248,0.20);
+    0 10px 25px rgba(94,234,212,0.20);
 }
 
 .btn-primary-custom:hover {
@@ -191,7 +204,7 @@ body {
   transform: translateY(-4px);
 
   box-shadow:
-    0 15px 35px rgba(56,189,248,0.30);
+    0 15px 35px rgba(94,234,212,0.30);
 }
 
 /* BOTON SECUNDARIO */
@@ -207,6 +220,10 @@ body {
   color: white;
 
   text-decoration: none;
+
+  font-family: 'JetBrains Mono', monospace;
+
+  font-size: 0.9rem;
 
   transition: 0.3s ease;
 
@@ -261,7 +278,7 @@ body {
 
   .hero-tag {
 
-    font-size: 0.85rem;
+    font-size: 0.78rem;
 
     padding: 10px 18px;
 
@@ -328,7 +345,7 @@ body {
 
   .hero-tag {
 
-    font-size: 0.75rem;
+    font-size: 0.7rem;
 
     padding: 8px 14px;
 
