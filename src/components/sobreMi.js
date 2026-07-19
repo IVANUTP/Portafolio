@@ -1,90 +1,89 @@
 import React from "react";
 import "../stylesheet/sobremi.css";
+import AboutTerminal from "./useTypedLines";
 
 const SobreMi = () => {
   return (
-    <section id="sobre-mi" className="about-section">
+    <>
+      <section id="sobre-mi" className="about-section">
 
-      <div className="about-container">
+        <div className="about-container">
 
-        {/* LEFT */}
-        <div className="about-content">
+          {/* LEFT */}
+          <div className="about-content">
 
-          <span className="about-subtitle">
-            SOBRE MÍ
-          </span>
+            <span className="about-subtitle">
+              SOBRE MÍ
+            </span>
 
-          <h2 className="about-title">
+            <h2 className="about-title">
               Desarrollador Web
-            <span> Backend & Frontend</span>
-          </h2>
+              <span> Backend & Frontend</span>
+            </h2>
 
-          <p className="about-text">
-            Soy desarrollador web enfocado en backend con Laravel y PHP,
-            aunque también me gusta trabajar con React para crear interfaces modernas.
-          </p>
+          
 
-          <p className="about-text">
-            Disfruto desarrollar aplicaciones funcionales,
-            aprender nuevas tecnologías y seguir mejorando
-            en el desarrollo de software.
-          </p>
+            <AboutTerminal />
 
-          <div className="about-buttons">
-            <a href="#proyectos" className="btn-primary-custom">
-              Ver proyectos
-            </a>
+            <div className="about-buttons">
 
-            <a href="#contacto" className="btn-secondary-custom">
-              Contacto
-            </a>
+              <a href="#proyectos" className="btn-primary-custom">
+                Ver proyectos
+              </a>
+
+              <a href="#contacto" className="btn-secondary-custom">
+                Contacto
+              </a>
+
+            </div>
+
+          </div>
+
+          {/* RIGHT */}
+          <div className="about-cards">
+
+            <div className="glass-card">
+              <h3>+3</h3>
+              <p>Proyectos desarrollados</p>
+            </div>
+
+            <div className="glass-card">
+              <h3>Laravel</h3>
+              <p>Backend Framework</p>
+            </div>
+
+            <div className="glass-card">
+              <h3>React</h3>
+              <p>Frontend moderno</p>
+            </div>
+
+            <div className="glass-card">
+              <h3>MySQL</h3>
+              <p>Bases de datos</p>
+            </div>
+
           </div>
 
         </div>
 
-        {/* RIGHT */}
-        <div className="about-cards">
+        {/* SKILLS */}
 
-          <div className="glass-card">
-            <h3>+3</h3>
-            <p>Proyectos desarrollados</p>
-          </div>
+        <div className="skills-wrapper">
 
-          <div className="glass-card">
-            <h3>Laravel</h3>
-            <p>Backend Framework</p>
-          </div>
-
-          <div className="glass-card">
-            <h3>React</h3>
-            <p>Frontend moderno</p>
-          </div>
-
-          <div className="glass-card">
-            <h3>MySQL</h3>
-            <p>Bases de datos</p>
-          </div>
+          <span>Laravel</span>
+          <span>PHP</span>
+          <span>React</span>
+          <span>JavaScript</span>
+          <span>MySQL</span>
+          <span>REST API</span>
+          <span>Bootstrap</span>
+          <span>Tailwind</span>
 
         </div>
 
-      </div>
+      </section>
+    </>
 
-      {/* SKILLS */}
-
-      <div className="skills-wrapper">
-
-        <span>Laravel</span>
-        <span>PHP</span>
-        <span>React</span>
-        <span>JavaScript</span>
-        <span>MySQL</span>
-        <span>REST API</span>
-        <span>Bootstrap</span>
-        <span>Tailwind</span>
-
-      </div>
-
-    </section>
   );
 };
 

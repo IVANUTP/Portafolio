@@ -1,104 +1,107 @@
+/* ==========================
+   TOKENS (idealmente estos van en un index.css
+   global para que Sobre-mí, Proyectos y Contacto
+   compartan la misma paleta sin repetir código)
+   ========================== */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --bg: #0a0e12;
+  --bg-elevated: #10161d;
+  --border: #1e2830;
+  --text: #e7edf3;
+  --text-dim: #cbd5e1;
+  --accent: #5eead4;
+}
+
 .custom-navbar {
-
-  background: rgba(2, 6, 23, 0.75);
-
+  background: rgba(10, 14, 18, 0.75);
   backdrop-filter: blur(12px);
-
-  border-bottom: 1px solid rgba(255,255,255,0.05);
-
+  border-bottom: 1px solid var(--border);
   padding: 18px 0;
-
   transition: 0.3s ease;
 }
 
 /* LOGO */
-
 .navbar-logo {
-
   width: 48px;
-
   height: 48px;
-
   object-fit: contain;
+  transition: transform 0.25s ease;
+}
+
+.navbar-brand:hover .navbar-logo {
+  transform: scale(1.05);
 }
 
 /* LINKS */
-
 .navbar-nav {
-
   gap: 10px;
 }
 
 .nav-link {
-
-  color: #cbd5e1 !important;
-
-  font-size: 0.95rem;
-
+  color: var(--text-dim) !important;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
   font-weight: 500;
-
   padding: 10px 18px !important;
-
   border-radius: 10px;
+  transition: 0.25s ease;
+}
 
-  transition: 0.3s ease;
+/* el "//" de comentario, look de terminal */
+.nav-link::before {
+  content: "// ";
+  color: var(--accent);
+  opacity: 0.55;
 }
 
 .nav-link:hover {
-
-  color: #38bdf8 !important;
-
-  background: rgba(255,255,255,0.04);
+  color: var(--accent) !important;
+  background: rgba(94, 234, 212, 0.06);
 }
 
 /* ACTIVE */
-
 .nav-link.active {
+  color: var(--accent) !important;
+}
 
-  color: #38bdf8 !important;
+.nav-link.active::before {
+  opacity: 1;
 }
 
 /* TOGGLER */
-
 .navbar-toggler {
-
   border: none;
-
-  color: white;
-
+  color: var(--text);
   font-size: 1.6rem;
-
   box-shadow: none !important;
 }
 
 .navbar-toggler i {
+  color: var(--text);
+  transition: color 0.2s ease;
+}
 
-  color: white;
+.navbar-toggler:hover i {
+  color: var(--accent);
 }
 
 /* MOBILE */
-
 @media screen and (max-width: 991px) {
-
   .navbar-collapse {
-
     margin-top: 20px;
-
-    background: rgba(15,23,42,0.95);
-
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
     padding: 20px;
-
     border-radius: 18px;
   }
 
   .navbar-nav {
-
     gap: 5px;
   }
 
   .nav-link {
-
     text-align: center;
   }
-
 }
