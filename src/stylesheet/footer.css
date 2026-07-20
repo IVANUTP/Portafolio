@@ -5,7 +5,7 @@
   background:
     linear-gradient(
       180deg,
-      #020617 0%,
+      #0a0e12 0%,
       #000000 100%
     );
 
@@ -108,9 +108,11 @@
 
   transform: translateY(-5px);
 
-  background: #38bdf8;
+  background: #5eead4;
 
-  border-color: #38bdf8;
+  border-color: #5eead4;
+
+  color: #06211d;
 }
 
 /* COPYRIGHT */
@@ -121,7 +123,9 @@
 
   color: #64748b;
 
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+
+  font-family: 'JetBrains Mono', monospace;
 }
 
 /* RESPONSIVE */

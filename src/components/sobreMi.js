@@ -1,6 +1,7 @@
 import React from "react";
 import "../stylesheet/sobremi.css";
 import AboutTerminal from "./useTypedLines";
+import laravel from "../img/laravel.png"
 
 const SobreMi = () => {
   return (
@@ -21,7 +22,7 @@ const SobreMi = () => {
               <span> Backend & Frontend</span>
             </h2>
 
-          
+
 
             <AboutTerminal />
 
@@ -67,17 +68,39 @@ const SobreMi = () => {
         </div>
 
         {/* SKILLS */}
-
         <div className="skills-wrapper">
 
-          <span>Laravel</span>
-          <span>PHP</span>
-          <span>React</span>
-          <span>JavaScript</span>
-          <span>MySQL</span>
-          <span>REST API</span>
-          <span>Bootstrap</span>
-          <span>Tailwind</span>
+          <div className="skill-item">
+            <i className="devicon-laravel-plain colored"></i>
+          </div>
+
+          <div className="skill-item">
+            <i className="devicon-php-plain colored"></i>
+          </div>
+
+          <div className="skill-item">
+            <i className="devicon-react-original colored"></i>
+          </div>
+
+          <div className="skill-item">
+            <i className="devicon-javascript-plain colored"></i>
+          </div>
+
+          <div className="skill-item">
+            <i className="devicon-mysql-original colored"></i>
+          </div>
+
+          <div className="skill-item">
+            <i className="devicon-bootstrap-plain colored"></i>
+          </div>
+
+          <div className="skill-item">
+            <i className="devicon-spring-original colored"></i>
+          </div>
+
+          <div className="skill-item">
+            <i className="devicon-android-plain colored"></i>
+          </div>
 
         </div>
 
