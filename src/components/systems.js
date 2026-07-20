@@ -1,57 +1,69 @@
-  import React from "react";
+import React from "react";
 
-  class Systems extends React.Component {
-    render() {
-      return (
-        <div className="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+class Systems extends React.Component {
+  render() {
+    const { img, titulo, descripcion, github, demo, estado } = this.props;
 
-          <div className="project-card">
+    return (
+      <div className="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
 
-            <div className="project-image-container">
-              <img
-                src={this.props.img}
-                alt={this.props.titulo}
-                className="project-image"
-              />
-            </div>
+        <div className="sys-card">
 
-            <div className="project-content">
+          <div className="sys-image-container">
 
-              <h3>{this.props.titulo}</h3>
+            <img
+              src={img}
+              alt={titulo}
+              className="sys-image"
+            />
 
-              <p>
-                {this.props.descripcion}
-              </p>
+            {estado && (
+              <span className="sys-status">
+                {estado}
+              </span>
+            )}
 
-              <div className="project-buttons">
+          </div>
 
+          <div className="sys-content">
+
+            <h3 className="sys-title">{titulo}</h3>
+
+            <p className="sys-description">{descripcion}</p>
+
+            <div className="sys-buttons">
+
+              {github && (
                 <a
-                  href="https://github.com/IVANUTP"
+                  href={github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="project-btn"
+                  className="sys-btn"
                 >
                   <i className="bi bi-github"></i>
                 </a>
+              )}
 
+              {demo && (
                 <a
-                  href="https://weather-app-psi-one-99.vercel.app/"
+                  href={demo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="project-btn"
+                  className="sys-btn"
                 >
                   <i className="bi bi-box-arrow-up-right"></i>
                 </a>
-
-              </div>
+              )}
 
             </div>
 
           </div>
 
         </div>
-      );
-    }
-  }
 
-  export default Systems;
+      </div>
+    );
+  }
+}
+
+export default Systems;
