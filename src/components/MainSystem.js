@@ -15,7 +15,7 @@ const MainSystem = () => {
       <div className="sys-header">
 
         <span className="sys-subtitle">
-          // PORTAFOLIO
+          PORTAFOLIO
         </span>
 
         <h2>

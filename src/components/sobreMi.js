@@ -1,7 +1,6 @@
 import React from "react";
 import "../stylesheet/sobremi.css";
 import AboutTerminal from "./useTypedLines";
-import laravel from "../img/laravel.png"
 
 const SobreMi = () => {
   return (
